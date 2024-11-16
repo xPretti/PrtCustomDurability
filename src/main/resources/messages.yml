@@ -1,0 +1,16 @@
+#
+# +--------------------------------------------+
+# |                  MESSAGES                  |
+# +--------------------------------------------+
+#
+
+messages:
+  no-permission: "&4&lCD &4» &cYou do not have access to this command!"
+  reload: "&2&lCD &2» &aConfiguration reloaded successfully!"
+  reload-error: "&4&lCD &4» &cConfiguration was not successfully reloaded! (Check console)"
+  help:
+  - ""
+  - "&6&lCustomDurability &7- &eHelp commands:"
+  - ""
+  - "&6* &e/fd reload &f= &7Reloads the configuration;"
+  - ""

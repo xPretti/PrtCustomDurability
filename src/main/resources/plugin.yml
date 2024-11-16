@@ -1,0 +1,9 @@
+name: PrtCustomDurability
+version: 1.0
+main: dev.pretti.prtcustomdurability.PrtCustomDurability
+author: Pretti_
+api-version: 1.13
+
+commands:
+  PrtCustomDurability:
+    aliases: [customdurability, cd]
