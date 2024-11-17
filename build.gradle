@@ -9,7 +9,7 @@ version = '1.0'
 /**
  * DEFINES
  */
-def finalFolderVersion = "1.8.8"
+def finalFolderVersion = "1.21.1"
 def finalName = "${project.name}-${project.version}.jar"
 def finalDirectory = "C:/Users/fabio/Desktop/Server Tester/"+finalFolderVersion+"/plugins/"
 def libsDirectory = "D:/Desenvolvimento/IntelliJ/Minecraft/Libs"

@@ -9,7 +9,8 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.EntityDamageByBlockEvent;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 
@@ -29,15 +30,27 @@ public class EntityDamageListener implements Listener
    * Método de implementação do custom durability
    */
   @EventHandler
-  public void onEntityDamage(EntityDamageEvent event)
+  public void onEntityDamageByBlock(EntityDamageByBlockEvent event)
   {
-    double damage = event.getDamage();
+    runDamageEvent(event.getEntity(), event.getDamage());
+  }
+
+  @EventHandler
+  public void onEntityDamageByEntity(EntityDamageByEntityEvent event)
+  {
+    runDamageEvent(event.getEntity(), event.getDamage());
+  }
+
+  /**
+  * Run damage event
+  */
+  private void runDamageEvent(Entity entity, double damage)
+  {
     if(damage > 1)
       {
-        Entity entity = event.getEntity();
         if(entity instanceof Player)
           {
-            Player          player    = (Player) event.getEntity();
+            Player          player    = (Player) entity;
             PlayerInventory inventory = player.getInventory();
             damageArmor(player, inventory.getHelmet(), damage);
             damageArmor(player, inventory.getChestplate(), damage);

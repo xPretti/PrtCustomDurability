@@ -6,13 +6,11 @@
 # |_|   |_|    \___)______)____(___/ \___)___/|_|_|_|_____/  \____|_|   \_||_|____/|_|_|_|\___)__  |
 #                                                                                            (____/
 #                                                                                         by Pretti_
-# Supports:
-#   (Soon) Discord: https://discord.gg/****
 
 #
 # Permissions:
-# - customdurability.command.autopickup = To be able to access the list of commands with the /fixdamage;
-# - customdurability.command.reload     = To be able to reload the plugin with the /fixdamage reload;
+# - customdurability.command.customdurability = To be able to access the list of commands with the /cd;
+# - customdurability.command.reload           = To be able to reload the plugin with the /cd reload;
 
 #
 # OPTIONS

@@ -1,6 +1,6 @@
 package dev.pretti.prtcustomdurability;
 
-import dev.pretti.prtcustomdurability.commands.FixDamageCommand;
+import dev.pretti.prtcustomdurability.commands.CustomDurabilityCommand;
 import dev.pretti.prtcustomdurability.configs.ConfigManager;
 import dev.pretti.prtcustomdurability.info.DebugInitializer;
 import dev.pretti.prtcustomdurability.listeners.EntityDamageListener;
@@ -99,7 +99,7 @@ public class PrtCustomDurability extends JavaPlugin
    */
   protected void registerCommands()
   {
-    getCommand("CustomDurability").setExecutor(new FixDamageCommand(this));
+    getCommand("CustomDurability").setExecutor(new CustomDurabilityCommand(this));
   }
 
   /**

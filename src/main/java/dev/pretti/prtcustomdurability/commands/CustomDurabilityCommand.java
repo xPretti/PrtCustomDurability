@@ -14,16 +14,16 @@ import org.bukkit.command.TabCompleter;
 
 import java.util.List;
 
-public class FixDamageCommand extends BaseCommands implements CommandExecutor, TabCompleter
+public class CustomDurabilityCommand extends BaseCommands implements CommandExecutor, TabCompleter
 {
   private final MessagesConfig messagesConfig;
 
   /**
    * Construtor da classe
    */
-  public FixDamageCommand(PrtCustomDurability plugin)
+  public CustomDurabilityCommand(PrtCustomDurability plugin)
   {
-    super("FixDamage", PermissionsConstants.COMMAND_FIXDAMAGE_PERM);
+    super("FixDamage", PermissionsConstants.COMMAND_CUSTOMDURABILITY_PERM);
     this.messagesConfig      = plugin.getConfigManager().getMessagesConfig();
 
     // Registros
