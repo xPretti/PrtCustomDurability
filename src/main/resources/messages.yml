@@ -12,5 +12,5 @@ messages:
   - ""
   - "&6&lCustomDurability &7- &eHelp commands:"
   - ""
-  - "&6* &e/fd reload &f= &7Reloads the configuration;"
+  - "&6* &e/cd reload &f= &7Reloads the configuration;"
   - ""
