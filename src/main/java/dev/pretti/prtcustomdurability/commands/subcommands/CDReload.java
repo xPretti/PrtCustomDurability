@@ -6,7 +6,7 @@ import dev.pretti.prtcustomdurability.configs.types.MessagesConfig;
 import dev.pretti.prtcustomdurability.utils.ReplaceUtils;
 import org.bukkit.command.CommandSender;
 
-public class APReload extends BaseCommand
+public class CDReload extends BaseCommand
 {
   private final PrtCustomDurability plugin;
   private final MessagesConfig      messagesConfig;
@@ -14,7 +14,7 @@ public class APReload extends BaseCommand
   /**
    * Construtor da classe
    */
-  public APReload(String command, String permission, PrtCustomDurability plugin)
+  public CDReload(String command, String permission, PrtCustomDurability plugin)
   {
     super(command, permission);
     this.plugin         = plugin;

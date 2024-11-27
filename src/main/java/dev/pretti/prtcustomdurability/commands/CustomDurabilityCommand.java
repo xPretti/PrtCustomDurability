@@ -3,7 +3,7 @@ package dev.pretti.prtcustomdurability.commands;
 
 import dev.pretti.prtcustomdurability.PrtCustomDurability;
 import dev.pretti.prtcustomdurability.commands.base.BaseCommands;
-import dev.pretti.prtcustomdurability.commands.subcommands.APReload;
+import dev.pretti.prtcustomdurability.commands.subcommands.CDReload;
 import dev.pretti.prtcustomdurability.configs.types.MessagesConfig;
 import dev.pretti.prtcustomdurability.constants.PermissionsConstants;
 import dev.pretti.prtcustomdurability.utils.ReplaceUtils;
@@ -23,11 +23,11 @@ public class CustomDurabilityCommand extends BaseCommands implements CommandExec
    */
   public CustomDurabilityCommand(PrtCustomDurability plugin)
   {
-    super("FixDamage", PermissionsConstants.COMMAND_CUSTOMDURABILITY_PERM);
+    super("CustomDurability", PermissionsConstants.COMMAND_CUSTOMDURABILITY_PERM);
     this.messagesConfig      = plugin.getConfigManager().getMessagesConfig();
 
     // Registros
-    register(new APReload("reload", PermissionsConstants.COMMAND_RELOAD_PERM, plugin));
+    register(new CDReload("reload", PermissionsConstants.COMMAND_RELOAD_PERM, plugin));
   }
 
   /**

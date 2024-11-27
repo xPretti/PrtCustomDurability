@@ -59,14 +59,16 @@ public class PrtCustomDurability extends JavaPlugin
 
     boolean success = configManager.load();
 
-    LogUtils.logNormal("");
     if(success)
       {
         DebugInitializer.Show(configManager.getOptionsConfig());
+
+        LogUtils.logNormal("");
         LogUtils.logNormal("Everything initialized correctly.");
       }
     else
       {
+        LogUtils.logNormal("");
         LogUtils.logError("&4Something went wrong during the initialization process.");
       }
     LogUtils.log("");
